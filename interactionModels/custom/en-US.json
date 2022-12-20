@@ -1,0 +1,85 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "general facts",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "{factType}",
+            "Fact of {factType}",
+            "Fact",
+            "Tell me a {factType} fact",
+            "Tell a fact"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "add {factType} as a new topic",
+            "save {factType}  as a new topic",
+            "save {factType} as a favourite topic",
+            "add {factType} as a favourite topic",
+            "save {factType} as a favourite fact topic",
+            "add {factType} as a favourite fact topic"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Animals"
+              }
+            },
+            {
+              "name": {
+                "value": "Food"
+              }
+            },
+            {
+              "name": {
+                "value": "Films"
+              }
+            }
+          ],
+          "name": "FactType"
+        }
+      ]
+    }
+  },
+  "version": "2"
+}

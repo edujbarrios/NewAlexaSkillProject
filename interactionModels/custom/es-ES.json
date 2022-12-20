@@ -1,0 +1,85 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "curiosidades generales",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "{factType}",
+            "Curiosidad de {factType}",
+            "Curiosidad",
+            "Dime una curiosidad de {factType}",
+            "Dime una curiosidad"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "agregue {factType} como un tema nuevo",
+            "guardar {factType} como un tema nuevo",
+            "agrega {factType} como tema favorito",
+            "guardar {factType} como tema favorito",
+            "agregue {factType} como un tema de hechos favorito",
+            "guardar {factType} como un tema de hechos favorito"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Animales"
+              }
+            },
+            {
+              "name": {
+                "value": "Comida"
+              }
+            },
+            {
+              "name": {
+                "value": "Películas"
+              }
+            }
+          ],
+          "name": "FactType"
+        }
+      ]
+    }
+  },
+  "version": "9"
+}
